@@ -1,0 +1,219 @@
+* {margin: 0; padding: 0;}
+@font-face {
+  font-family: Title;
+  src: url("Files/Font/Title.ttf");
+}
+body {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  background-image: url("Files/Pictures/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  font-family: 'Title';
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.home {
+  height: 300vh;
+}
+.genealogy {
+  height: 150vh;
+}
+.Geolocalisation {
+  height: 200vh;
+}
+#home, #medias, #contact{
+  height: 100vh;
+}
+#tree01 {
+  margin-top: 50px;
+}
+#tree01, #tree02, #tree03 {
+  height: 50vh; width: 80vw;
+  margin-top: 70px;
+}
+#tree02, #tree03 {
+  margin-top: 10px;
+}
+
+.master {
+  display: flex;
+}
+.slave {
+  margin: auto;
+}
+
+.Panel {
+  width: 50vw; height: 600px;
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+
+}
+.Panel a {
+  margin-top: 70px;
+  color: white;
+  width: 200px;
+}
+.Panel a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-color: white;
+}
+.Panel img {
+  width: 200px;
+  filter: invert(1);
+  margin-bottom: 20px;
+}
+.box {
+  padding-top: 50px;
+  width: 70vw; height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.box a {
+  margin-top: 70px;
+}
+.box img {
+  box-shadow: 1px 1px 12px black;
+}
+.box img:hover {
+  box-shadow: 1px 1px 12px white;
+}
+.box a p {
+  color: white;
+  font-weight: bold;
+}
+.frame {
+  width: 70%;
+  height: 70vh;
+}
+
+
+.navbar .Fam {
+  background-color: grey;
+  color: white;
+}
+.navbar .Gene {
+  background-color: brown;
+  color: white;
+}
+.navbar .Bree {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.navbar .Count {
+  background-color: orange;
+  color: white;
+}
+
+#tree01 .btn-secondary, #tree02 .btn-secondary, #tree03 .btn-secondary  {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#tree01 .btn-secondary:hover, #tree02 .btn-secondary:hover, #tree03 .btn-secondary:hover {
+  background-color: white;
+  color: black;
+}
+#tree01 .dropdown-menu, #tree02 .dropdown-menu, #tree03 .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
+.tree {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 40vh;
+}
+.tree ul {
+	padding-top: 20px; position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid white;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid white;
+}
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+.tree li:only-child{ padding-top: 0;}
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+.tree li:last-child::before{
+	border-right: 1px solid white;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid white;
+	width: 0; height: 20px;
+}
+.tree li a{
+	border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+	padding: 5px 10px;
+	text-decoration: none;
+	color: white;
+	font-family: arial, verdana, tahoma;
+	font-size: 20px;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.tree li .Fam {
+  background-color: grey;
+}
+.tree li .Gene {
+  background-color: brown;
+}
+.tree li .Country {
+  background-color: orange;
+}
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: white;color: black; border: 1px solid white;
+}
+.tree li a:hover+ul li::after,
+.tree li a:hover+ul li::before,
+.tree li a:hover+ul::before,
+.tree li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
