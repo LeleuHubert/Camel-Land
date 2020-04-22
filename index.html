@@ -130,10 +130,10 @@
       <div class="container-fluid">
         <div class="row" id="home">
           <div class="col-lg-12 master">
-            <div class="slave Panel">
+            <div class="slave" id="Panel01">
               <h1>Camel-Land</h1>
               <img src="Files/Pictures/icone.png" alt="camel icone">
-              <h2>Welcome, the aim of this site is to bring together all the existing breeds of camelid and to document them in order to educate you about their species and the role they have played in the evolution of mankind.</h2>
+              <h2>The objective of this site is to gather as much information as possible about the Camelidae family and the role they played in the evolution of humans.</h2>
               <div class="row">
                 <div class="col-lg-6 master">
                   <a href="index.html#medias" class="slave">Medias</a>
@@ -147,12 +147,7 @@
         </div>
         <div class="row" id="medias">
           <div class="col-lg-12 master">
-            <div class="slave box">
-              <div class="row">
-                <div class="col-lg-12">
-                  <h2>Do you still have questions about Camelids?<br/>Here are the answers to your questions.</h2>
-                </div>
-              </div>
+            <div class="slave" id="Panel02">
               <div class="row">
                 <div class="col-lg-4 master">
                   <a class="slave" target="_blank" href="https://www.gad-distribution.com/en/series-documentaires/animalier-1/le-retour-des-camelides/les-dieux-des-andes?page=1">
@@ -177,7 +172,21 @@
           </div>
         </div>
         <div class="row" id="contact">
-
+          <div class="col-lg-12 master">
+            <div class="slave master" id="Panel03">
+              <form class="slave cf">
+                <div class="half left cf">
+                  <input type="text" id="input-name" placeholder="Name">
+                  <input type="email" id="input-email" placeholder="Email address">
+                  <input type="text" id="input-subject" placeholder="Subject">
+                </div>
+                <div class="half right cf">
+                  <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                </div>
+                <input type="submit" value="Submit" id="input-submit">
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
