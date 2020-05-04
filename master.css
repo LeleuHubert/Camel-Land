@@ -143,7 +143,7 @@ h1 {
 }
 .scrollable-menu {
   height: auto;
-  max-height: 200px;
+  max-height: 270px;
   overflow-x: hidden;
 }
 
@@ -332,6 +332,7 @@ form textarea {
   height: 85px;
 }
 .button {
+  width: 100px;
   font-size: 1em;
   padding: 10px;
   color: #fff;
@@ -391,6 +392,7 @@ form textarea {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+  color: black;
 }
 @media screen and (max-width: 700px){
   .box{

@@ -19,6 +19,7 @@ Camel Mandchou
 Camel sauvage de Tartarie (Chine)
 Camel Uralobukeevskii (Kazakhstan)
 Camel Yuzhnokazakhstanskii (Kazakhstan)
+
 Dromedary Afar
 Dromedary Aftout (Maroc, Mauritanie, Sahara Occidental)
 Dromedary AI-Chaelae
